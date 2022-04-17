@@ -3,7 +3,7 @@
   "name": "Remootio",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/remootio",
- "version": "0.9",
+ "version": "1.0",
   "requirements": [
     "aioremootio==1.0.0a14"
   ],
