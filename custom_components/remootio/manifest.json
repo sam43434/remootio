@@ -3,15 +3,11 @@
   "name": "Remootio",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/remootio",
-  "version": "1.1",
-  "requirements": [
-    "aioremootio==1.0.0a14"
-  ],
+  "version": "1.2",
+  "requirements": ["aioremootio==1.0.0a15"],
   "ssdp": [],
   "homekit": {},
   "dependencies": [],
-  "codeowners": [
-    "@ivgg-me"
-  ],
+  "codeowners": ["@ivgg-me"],
   "iot_class": "local_push"
 }
