@@ -63,7 +63,7 @@ async def get_serial_number(
                 await _check_sensor_installed(remootio_client)
                 await _check_api_version(remootio_client)
 
-                result = await remootio_client.serial_number
+                result = remootio_client.serial_number
 
     return result
 
