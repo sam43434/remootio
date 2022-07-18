@@ -42,8 +42,8 @@ async def _check_sensor_installed(
             raise UnsupportedRemootioDeviceError
 
         _LOGGER.error(
-            "Your Remootio device isn't supported, possibly because it hasn't a sensor installed. IP [%s]",
-            remootio_client.ip_address,
+            "Your Remootio device isn't supported, possibly because it hasn't a sensor installed. Host [%s]",
+            remootio_client.host,
         )
 
 
