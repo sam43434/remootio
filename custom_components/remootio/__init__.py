@@ -42,7 +42,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     hass_data = hass.data.setdefault(DOMAIN, {}).setdefault(entry.entry_id, {})
     hass_data[REMOOTIO_CLIENT] = remootio_client
 
-    hass.config_entries.async_setup_platforms(entry, PLATFORMS)
+    await hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
 
     return True
 
