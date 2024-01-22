@@ -55,7 +55,7 @@ class RemootioCover(cover.CoverEntity):
     _remootio_client: RemootioClient
     _attr_has_entity_name = True
     _attr_should_poll = False
-    _attr_supported_features = cover.SUPPORT_OPEN | cover.SUPPORT_CLOSE
+    _attr_supported_features = cover.CoverEntityFeature.OPEN | cover.CoverEntityFeature.CLOSE
     def __init__(
         self,
         unique_id: str,
